@@ -3,3 +3,10 @@ nav .navbar-brand
     /* size for brand */
     font-size: xx-large;
 }
+
+.welcome
+{
+    background-image: url("img/epin-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
