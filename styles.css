@@ -9,4 +9,10 @@ nav .navbar-brand
     background-image: url("img/epin-background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+}
+
+.welcome h1
+{
+    text-align: center;
 }
