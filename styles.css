@@ -1,48 +1,5 @@
-.navbar-dark .navbar-nav .nav-link
+nav .navbar-brand
 {
-    color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:active,
-.navbar-dark .navbar-nav .nav-link:visited
-{
-    border-bottom: 2px solid #fb9c16;
-    color: #fff;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-brand:hover
-{
-    color: #fff;
-    margin: 10px;
-}
-
-.home-link
-{
-    color: #fff;
-}
-
-.home-link:hover,
-.home-link:active,
-.home-link:visited
-{
-    color: #fff;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-.navbar
-{
-    background-color: black;
-}
-
-.nav-active
-{
-    font-weight: bold;
-}
-
-.navbar-toggler
-{
-    margin: 5px;
+    /* size for brand */
+    font-size: xx-large;
 }
