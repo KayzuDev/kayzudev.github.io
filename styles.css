@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
 nav .navbar-brand
 {
     /* size for brand */
     font-size: xx-large;
+    font-family: 'Licorice', cursive;
+}
+
+nav .navbar-brand .red
+{
+    color: red;
+}
+
+nav .navbar-brand .blue
+{
+    color: lightskyblue;
+}
+
+nav .navbar-brand .orange
+{
+    color: orange;
+}
+
+img
+{
+    margin: 10px;
+}
+
+.image-center
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
 }
 
 .welcome
@@ -14,10 +44,14 @@ nav .navbar-brand
     text-align: center;
 }
 
-.welcome h1
+.welcome img
 {
-    text-align: center;
-    color: darkblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 10px;
 }
 
 #quiz
@@ -73,4 +107,21 @@ button
     border-radius: 10px;
     width: 50px;
     margin: 5px;
+}
+
+p, h1
+{
+    margin: 10px;
+}
+
+#author
+{
+    color: gray;
+    font-style: italic;
+}
+
+.day-title
+{
+    font-weight: bold;
+    text-decoration: underline;
 }

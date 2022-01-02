@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <a href="index.html"><span class="navbar-brand"><span class="orange">The</span> <span class="red">Daily</span> <span class="blue">Epin</span></span></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <span id="score"></span>
+        <br>
+        <button id="resetbtn" onclick="reset();">&#8634;</button>
+    </div>
+    <h1>It's quiz time !</h1>
+    <div id="quiz">
+        <br>
+        <div class="question">
+            <span>Where did we go on day 2?</span>
+            <p>
+                <input class="quiz-btn answer correct" type="button" onclick="selectAnswer(event)" value="Blue Mountains">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Cairns">
+            </p>
+        </div>
+        <br>
+        <div class="question">
+            <span>What is the first Australian specialty we ate?</span>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Fish and chips">
+            </p>
+            <p>
+                <input class="quiz-btn answer correct" type="button" onclick="selectAnswer(event)" value="Witchetty Grubs">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Lamingtons">
+            </p>
+        </div>
+        <br>
+        <div class="question">
+            <span>What is the second "state" of Australia we visited?</span>
+            <p>
+                <input class="quiz-btn answer correct" type="button" onclick="selectAnswer(event)" value="Queensland">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Western Australia">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Northern Territory">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="New South Wales">
+            </p>
+        </div>
+        <br>
+        <div class="question">
+            <span>What happened to William on day 7?</span>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="He ate insects">
+            </p>
+            <p>
+                <input class="quiz-btn answer correct" type="button" onclick="selectAnswer(event)" value="A kangaroo fight">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="He was lost">
+            </p>
+        </div>
+        <br>
+        <div class="question">
+            <span>What is the last place that we visited?</span>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Harbour Bridge">
+            </p>
+            <p>
+                <input class="quiz-btn answer wrong" type="button" onclick="selectAnswer(event)" value="Opera House">
+            </p>
+            <p>
+                <input class="quiz-btn answer correct" type="button" onclick="selectAnswer(event)" value="Centennial Park">
+            </p>
+        </div>
+        <br>
+        <a href="#top"><button class="quiz-btn" type="button" onclick="checkAnswers()">I'm done!</button></a>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
